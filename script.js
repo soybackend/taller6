@@ -53,8 +53,9 @@ function cleanRules(){
 	$("#css_rules").val("");
 }
 
+generateRules();
+
 $( document ).ready(function() {  
-	generateRules();
 	$("#btn_generate").on('click', generateRules);
 	$("#btn_clean").on('click', cleanRules);
 });
